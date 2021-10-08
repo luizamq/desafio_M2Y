@@ -13,6 +13,10 @@
 		CAB339AA270E1CD600872D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB339A8270E1CD600872D23 /* Main.storyboard */; };
 		CAB339AC270E1CD700872D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB339AB270E1CD700872D23 /* Assets.xcassets */; };
 		CAB339AF270E1CD700872D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB339AD270E1CD700872D23 /* LaunchScreen.storyboard */; };
+		CAC1B01C270F356C00E92C24 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1B01B270F356C00E92C24 /* Model.swift */; };
+		CAC1B01F270F368600E92C24 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1B01E270F368600E92C24 /* ApiService.swift */; };
+		CAC1B022270F3E6B00E92C24 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1B021270F3E6B00E92C24 /* MovieViewModel.swift */; };
+		CAC1B025270F443600E92C24 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1B024270F443600E92C24 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CAB339AB270E1CD700872D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB339AE270E1CD700872D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB339B0270E1CD700872D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC1B01B270F356C00E92C24 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CAC1B01E270F368600E92C24 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		CAC1B021270F3E6B00E92C24 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		CAC1B024270F443600E92C24 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0A62032710770000EF4ACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1B01B270F356C00E92C24 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA0A62042710770700EF4ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAB339A8270E1CD600872D23 /* Main.storyboard */,
+				CAC1B024270F443600E92C24 /* MovieTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA0A62052710771000EF4ACE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1B021270F3E6B00E92C24 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA0A62062710771B00EF4ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAB339A6270E1CD600872D23 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA0A62072710772100EF4ACE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1B01E270F368600E92C24 /* ApiService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		CAB33996270E1CD600872D23 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +105,13 @@
 		CAB339A1270E1CD600872D23 /* DesafioM2Y-Luiza */ = {
 			isa = PBXGroup;
 			children = (
+				CA0A62032710770000EF4ACE /* Model */,
+				CA0A62042710770700EF4ACE /* View */,
+				CA0A62052710771000EF4ACE /* ViewModel */,
+				CA0A62062710771B00EF4ACE /* Controller */,
+				CA0A62072710772100EF4ACE /* Networking */,
 				CAB339A2270E1CD600872D23 /* AppDelegate.swift */,
 				CAB339A4270E1CD600872D23 /* SceneDelegate.swift */,
-				CAB339A6270E1CD600872D23 /* ViewController.swift */,
-				CAB339A8270E1CD600872D23 /* Main.storyboard */,
 				CAB339AB270E1CD700872D23 /* Assets.xcassets */,
 				CAB339AD270E1CD700872D23 /* LaunchScreen.storyboard */,
 				CAB339B0270E1CD700872D23 /* Info.plist */,
@@ -138,8 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB339A7270E1CD600872D23 /* ViewController.swift in Sources */,
+				CAC1B01F270F368600E92C24 /* ApiService.swift in Sources */,
+				CAC1B025270F443600E92C24 /* MovieTableViewCell.swift in Sources */,
 				CAB339A3270E1CD600872D23 /* AppDelegate.swift in Sources */,
 				CAB339A5270E1CD600872D23 /* SceneDelegate.swift in Sources */,
+				CAC1B01C270F356C00E92C24 /* Model.swift in Sources */,
+				CAC1B022270F3E6B00E92C24 /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

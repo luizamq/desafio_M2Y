@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  DesafioM2Y-Luiza
 //
-//  Created by Felipe SP on 06/10/21.
+//  Created by Luiza Moruz on 06/10/21.
 //
 
 import UIKit
